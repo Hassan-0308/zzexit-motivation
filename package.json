@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "chromedriver": "^111.0.0",
+    "nightwatch": "^1.7.13"
+  }
+}
