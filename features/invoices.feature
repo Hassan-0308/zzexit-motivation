@@ -5,30 +5,29 @@ As a registered customer, I want to view Invoice metrics to have a better unders
 Background:
   Given I am logged into Metabase
 
-Scenario: Viewing Invoices Dashboard
+#1
+Scenario: Navigate to Invoicess Dashboard
 
-  #1
-  Given I open Metabase Homepage
-  Then the page displays "Try out these sample x-rays to see what Metabase can do."
-  And multiple x-ray options exist
-
-  #2
   Given I open Metabase Homepage
   When I click on "A summary of Invoices"
   Then the page redirects to Invoices Dashboard
   And displays "Here's a quick look at your Invoices table"
 
-  #3
+#2
+Scenario: View Filters on Invoices Dashboard
+
   Given I am on the Invoices Dashboard
   Then I can view multiple filters
 
-  #4
+#3
+Scenario: View 'Country' Filter on Invoices Dashboard
   Given I am on the Invoices Dashboard
   And I can view multiple filters
   When I click the "Country" dropdown button
   Then I can view a list of country codes
 
-  #5
+#4
+Scenario: Use 'Country' Filter on Invoices Dashboard
   Given I am on the Invoices Dashboard
   And I can view multiple filters
   When I click the "Country" dropdown button
@@ -36,25 +35,29 @@ Scenario: Viewing Invoices Dashboard
   And click on "Add filter"
   Then the page updates to show me invoice metrics from USA
 
-  #6
+#5
+Scenario: View 'Source' Filter on Invoices Dashboard
   Given I am on the Invoices Dashboard
   And I can view multiple filters
   When I click the "Source" dropdown button
   Then I can view a dropdown menu with different social platforms
 
-  #7
-  Given I am on the Accounts Dashboard
+#6
+Scenario: Use 'Source' Filter on Invoices Dashboard
+  Given I am on the Invoicess Dashboard
   And I can view multiple filters
   When I click the "Source" dropdown button
   And I select "Facebook"
   And click on "Apply filter"
   Then the page is updated with the filtered data
 
-  #8
+#7
+Scenario: View 'Summary' section on Invoices Dashboard
   Given I am on the Invoices Dashboard
   Then I can view a section titled "Summary"
 
-  #9
+#8
+Scenario: Use 'Plan' Filter on Invoices Dashboard
   Given I am on the Invoices Dashboard
   And I can view multiple filters
   When I click the "Plan" dropdown button
@@ -62,7 +65,8 @@ Scenario: Viewing Invoices Dashboard
   And click on Apply
   Then I can view Premium data
 
-  #10
+#9
+Scenario: Save Invoices Dashboard
   Given I am on the Invoices Dashboard
   And I can view the "Save this" button
   When I click the "Save this" button
