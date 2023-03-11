@@ -26,6 +26,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/features/*.feature",
     baseUrl: "http://localhost:3000",
     chromeWebSecurity: false,
+    chromeArgs: ["--max-connections-per-proxy=4000"],
     env: {
       allureReuseAfterSpec: true,
     },
