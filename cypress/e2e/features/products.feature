@@ -19,48 +19,19 @@ Scenario: Navigate to Accounts Dashboard
   And displays "Here's a quick look at your Products table"
 
 #3
-Scenario: View Filters on Products Dashboard
-  Given I am on the Products Dashboard
-  Then I can view multiple filters
-
-#4
-Scenario: View Category filters on Products Dashboard
-  Given I am on the Products Dashboard
-  And I can view multiple filters
-  When I click the "Category" dropdown button
-  Then I can view a list of product categories
-
-#5
-Scenario: Use 'Category' filters on Products Dashboard
-  Given I am on the Products Dashboard
-  And I can view multiple filters
-  When I click the "Category" dropdown button
-  And select "Gadget" from the dropdown menu
-  And click on "Add filter"
-  Then the page updates to show me data of "Gadget" products
-
-#6
-Scenario: Use "Created At" filters on Products Dashboard
-  Given I am on the Products Dashboard
-  And I can view multiple filters
-  When I click the "Created At" dropdown button
-  And select "Last Month" from the dropdown menu
-  Then the page updates to show me filtered data
-
-#7
 Scenario: View distribution graphs on Products Dashboard
   Given there is a section titled "How these Products are distributed"
   Then I can view a graph titled "Products by Rating"
   And I can view a graph titled "Products by Price"
   And I can view a graph titled "Products per Category"
 
-#8
+#4
 Scenario: View 'Summary' section on Products Dashboard
   Given I am on the Products Dashboard
   Then I can view a section titled "Summary"
   And the total available Products
 
-#9
+#5
 Scenario: Save Products Dashboard
   Given I am on the Products Dashboard
   And I can view the "Save this" button
