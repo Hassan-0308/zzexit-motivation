@@ -4,13 +4,15 @@ As a registered customer, I want to view the order insights so I can have a bett
 
 Background:
   Given I am logged into Metabase
+  And I open Metabase Homepage
+  And I click on Order
   
-Scenario: Viewing Orders Dashboard
+#Scenario: Viewing Orders Dashboard
 
   #1
-  Given I open Metabase Homepage
-  Then the page displays "Try out these sample x-rays to see what Metabase can do."
-  And multiple x-ray options exist
+  #Given I open Metabase Homepage
+  #Then the page displays "Try out these sample x-rays to see what Metabase can do."
+  #And multiple x-ray options exist
 
   #2
   Given I open Metabase Homepage

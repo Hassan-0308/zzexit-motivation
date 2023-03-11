@@ -17,10 +17,10 @@ As a registered customer, I want to view Products to have a better understanding
 #  When I click on Products
 #  Then the page redirects to Products Dashboard
 
-#Background:
-  #Given I am logged into Metabase
-  #And I open Metabase Homepage
-  #And I click on Products
+Background:
+  Given I am logged into Metabase
+  And I open Metabase Homepage
+  And I click on Products
 
 #3
 #Scenario: View distribution graphs on Products Dashboard
@@ -28,9 +28,9 @@ As a registered customer, I want to view Products to have a better understanding
   #Then I can view multiple graphs
 
 #4
-#Scenario: View 'Summary' section on Products Dashboard
-  #Then I can view a section titled 'Summary'
-  #And the total available Products
+Scenario: View 'Summary' section on Products Dashboard
+  Then I can view a section titled 'Summary'
+  And the total available Products
 
 #5
 #Scenario: Save Products Dashboard

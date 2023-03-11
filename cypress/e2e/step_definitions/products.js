@@ -4,7 +4,7 @@ import { productsPage } from "@pages/ProductsPage";
 
 Given("I am logged into Metabase", () => {
   cy.visit("/");
-  loginPage.submitLogin("mfk654@gmail.com", "test123!");
+  loginPage.submitLogin("hassan.naveed22D@gmail.com", "Hassan0308");
 });
 
 Given("I open Metabase Homepage", () => {
