@@ -32,9 +32,10 @@ class ProductsPage {
     this.elements.xrayOptions().find("a").its("length").should("be.gt", 1);
   }
   productGraphs() {
-    this.elements
-      .graphTitle()
-      .should("include.text", "How these Products are distributed");
+    // this.elements
+    // .graphTitle()
+    cy.xpath("//h1[normalize-space()='How these Products are distributed']")
+          // .should("include.text", "How these Products are distributed");
   }
   multipleGraphs() {
     cy.xpath("//div[contains(text(),'Products by Rating')]");

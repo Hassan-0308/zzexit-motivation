@@ -22,6 +22,16 @@ Then(
   }
 );
 
+Given("there is a section titled 'These Products across time'",()=> {
+cy.xpath("//h1[normalize-space()='These Products across time']")
+})
+
+Then("I can view multiple Product-timeline graphs",()=>{
+  cy.xpath("//div[contains(text(),'New Products over time')]")
+  cy.xpath("//div[contains(text(),'Rating over time')]")
+  cy.xpath("//div[contains(text(),'Price over time')]")
+})
+
 Then("multiple x-ray options exist", () => {
   productsPage.multipleOptions();
 });
