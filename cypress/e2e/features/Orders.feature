@@ -3,14 +3,14 @@ Feature: Orders Dashboard
 As a registered customer, I want to view the order insights so I can have a better understanding of my business
 
 Background:
-  Given I am logged into Metabase
+  Given I have logged into Metabase
 
   
   #1
 Scenario: Viewing Orders Dashboard
-  Given I open Metabase Homepage
+  Given I opened Metabase Homepage
   Then the page displays 'Try out these sample x-rays to see what Metabase can do'
-  And multiple x-ray options exist
+  And multiple x-ray options are displayed 
 
   #2
 Scenario: Navigate to Orders Dashboard

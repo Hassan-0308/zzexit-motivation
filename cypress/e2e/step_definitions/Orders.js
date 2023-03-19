@@ -3,14 +3,14 @@ import { loginPage } from "@pages/LoginPage";
 import { ordersPage } from "@pages/OrderPage";
 
 //Background
-Given("I am logged into Metabase", () => {
+Given("I have logged into Metabase", () => {
     cy.visit("/");
     loginPage.submitLogin("hassan.naveed22D@gmail.com", "Hassan0308");
   });
 
 
 //Test Case#1
-Given("I open Metabase Homepage", () => {
+Given("I opened Metabase Homepage", () => {
     ordersPage.homepage();
   });
   
@@ -20,7 +20,7 @@ Then(
         ordersPage.xrayText();
       }
     );
-Then("multiple x-ray options exist", () => {
+Then("multiple x-ray options are displayed", () => {
     ordersPage.multipleOptions();
   });
 
