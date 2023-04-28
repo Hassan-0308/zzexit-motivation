@@ -19,6 +19,10 @@
 
 This will run the API-test cases as well as Performance tests via K6
 
+### Known Issues
+- Unable to execute Unit Tests without setting up metabase codebase
+- Unable to run test cases via docker on WSL - get Error ECON REFUSED 
+
 
 ## Linters
 
