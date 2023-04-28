@@ -6,9 +6,19 @@
 
 **Performance Testing**: K6
 
-**Unit Testing**: TBD
+**Unit Testing**: React Testing Library / Jest
 
 **Linter**: ESLint
+
+## Executing Project
+
+- To execute test cases using Docker compose: `docker-compose up`
+- To run the Docker image: `docker run zz-exitmotivation`
+- To run API testcases: `npm run test-jest`
+- To run Performance testcases: `k6 run performance-testing/loginForm.js && k6 run performance-testing/loginForm.js` 
+
+This will run the API-test cases as well as Performance tests via K6
+
 
 ## Linters
 
