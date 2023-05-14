@@ -47,7 +47,7 @@ It provides highly accurate analysis, so developers don’t waste time on a larg
 
 ## Meeting Notes
 
-### Phase 1 and Phase 2 Clickup
+### Phase 1, Phase 2 and Phase 4 Clickup
 
 ### Phase 3
 
